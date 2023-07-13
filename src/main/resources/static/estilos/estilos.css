@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* logo header*/
+h1 {
+    font-family: "Montserrat";
+    color: #99419D;
+    float: left;
+    padding: 20px;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+h1 span {
+    color: #C970CE;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+h5 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*EVENTOS CARDS INICIO*/
+
+.eventos {
+    transition: all 0.5s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+    border-radius: 16px;
+}
+
+.card-evento {
+    width: auto;
+    min-height: 50px;
+    background-color: #F1F3F6;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    transition: all 0.5s;
+    border-radius: 16px;
+    box-shadow: 1px 0px 20px #bbbbbb;
+}
+
+.card-evento i{
+    color: #99419D;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.event-title{
+padding-top: 15px;
+}
+
+.event-date{
+display: flex;
+}
+
+.event-location{
+    display: flex;
+    }
+
+.event-buy{
+    background-color: #99419D;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.event-buy i{
+    color: white;
+}
+
+.event-buy a{
+    text-decoration: none;
+    color: white;
+}
+
+.card-evento:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    box-shadow: 2px 2px 20px #5C5C5C;
+}
+/* EVENTOS CARDS FINAL*/
+
+/* DETALLE EVENTO INICIO*/
+
+.event-portada img{
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.event-name{
+    display: flex;
+    padding-top: 10px;
+}
+
+.event-name h5{
+    display: flex;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.event-logo{
+    background-image: url(../static/img/Rectangle%20555.png);
+    text-align: left;
+    margin: 10px;
+    width: 67.77px;
+    height: 67.77px;
+    border: 1px solid;
+    border-color: #DCDCDC;
+    border-radius: 10px;
+}
+
+.section-detalle-evento{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.section-detalle-evento input{
+    margin: 10px;
+    border-radius: 10px;
+    border-color: #5C5C5C;
+}
+
+.section-detalle-evento h5{
+    margin: 0px;
+    padding-top: 20px;
+}
+
+.card-detalle-evento{
+    justify-content: center;
+    background-color: #EFEFEF;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.card-detalle-evento i{
+    margin: 5px;
+    padding-right: 10px;
+}
+
+.card-title{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.card-detalle-evento .event-location{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.texto-evento{
+    text-align: justify;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.card-detalle-evento img{
+    background-image: url(../static/img/Rectangle\ 13.png);
+    width: 100%;
+    height: auto;
+}
+
+.comprarTicket {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+#BtComprar {
+    background-color: #862F8B;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 20px 40px 20px 40px;
+}
+
+#BtComprar i{
+    margin-right: 10px;
+}
+
+#BtComprar:hover {
+    background-color: #C970CE;
+}
+
+.event-presentacion{
+    display: flex;
+    flex-direction: column;
+}
+
+/* DETALLE EVENTO FIN*/
+
+/*footer*/
+
+/* Estilos base para dispositivos móviles */
+footer {
+    margin-top: 50px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+footer article {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+footer h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+footer h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    margin-bottom: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    text-align: justify;
+}
+
+/* Estilos para tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    footer {
+        flex-wrap: nowrap;
+    }
+
+    footer h1 {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    footer p {
+        padding: 20px;
+    }
+
+    .event-name{
+        margin-left: 100px;
+    }
+
+    .event-presentacion{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.sign-up {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.loginform {
+  width: 360px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.loginform h1 {
+  font-family: "Montserrat";
+  color: #99419D;
+  font-size: 36px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.loginform h3 {
+  font-family: "Montserrat";
+  color: #1B1B1B;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.loginform h5 {
+  font-family: "Montserrat", sans-serif;
+  color: #5C5C5C;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 2px;
+}
+
+.loginform input {
+  height: 46px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+}
+
+.loginform .crearcuenta {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.loginform button {
+  background-color: #862F8B;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 12px 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.loginform button:hover {
+  background-color: #C970CE;
+}
+
+.redes {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.redes a {
+  font-size: 30px;
+  color: #1F2224;
+  padding: 5px;
+}
+
+.terms {
+  font-size: 15px;
+  color: #1F2224;
+  text-decoration: none;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}

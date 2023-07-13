@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800;900&display=swap');
+
+
+$fuente1: 'Montserrat';
+$fuente2: 'Montserrat', sans-serif;
+$simple01: #C970CE;
+$simple02: #99419D;
+$color3: #5C5C5C;
+$color4: #862F8B;
+
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffff;
+    font-family: $fuente2;
+
+}
+
+h1 {
+    font-family: $fuente1;
+    color: $simple02;
+    float: left;
+    padding: 20px;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+h1 span {
+    color: $simple01;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+nav {
+    float: right;
+    text-align: center;
+
+    li {
+        list-style: none;
+        display: inline-block;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+
+    a {
+        font-size: 15px;
+        color: $color3;
+        padding: 5px;
+        text-decoration: none;
+        font-family: $fuente2;
+
+
+    }
+
+    nav a:hover {
+        color: black;
+    }
+
+    nav .selected {
+        color: black;
+    }
+}
+
+header {
+    a {
+        font-size: 15px;
+        color: #5C5C5C;
+        padding: 5px;
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    img {
+
+        background-size: cover;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+}
+
+#cta {
+    background-color: #99419D;
+    color: white;
+    border-radius: 8px;
+    padding: 12px 8px 12px 8px;
+}
+
+#cta:hover {
+    background-color: #C970CE;
+    border-color: #1B1B1B;
+}
+
+#micuenta {
+    border-style:outset;
+    border-color: $simple01;
+    border-radius: 8px;
+    padding: 12px 8px 12px 8px;
+}
+
+h3 {
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #1B1B1B;
+    font-family: $fuente1;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+h4 {
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #5C5C5C;
+    font-family: $fuente2;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+
+.statics {
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.stat-title {
+    text-align: center;
+    align-items: center;
+    color: #1B1B1B;
+    font-size: 50px;
+    padding: 15px 90px 15px 90px;
+    font-weight: 600;
+}
+
+.card-stat {
+    width: auto;
+    min-height: 100px;
+    background-color: #F1F3F6;
+    text-align: center;
+    border-radius: 1px;
+    padding: 10px;
+    margin: 10px;
+    transition: all 0.5s;
+    border-radius: 16px;
+
+    p {
+        text-align: center;
+        font-size: 15px;
+        padding: 10px;
+        padding-bottom: 20px;
+        color: #5C5C5C;
+        font-family: $fuente2;
+    }
+
+
+}
+
+.card-stat:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+    background-color: #faebfa;
+}
+
+.eventos {
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+    border-radius: 16px;
+
+    .card-evento {
+        width: auto;
+        min-height: 100px;
+        background-color: #F1F3F6;
+        text-align: center;
+        border-radius: 1px;
+        padding: 10px;
+        margin: 10px;
+        transition: all 0.5s;
+        border-radius: 16px;
+
+
+        p {
+            text-align: center;
+            font-size: 15px;
+            padding: 10px;
+            padding-bottom: 20px;
+            color: #5C5C5C;
+            font-family: $fuente2;
+        }
+
+        i {
+            color: #C970CE;
+        }
+
+    }
+
+    .card-evento:hover {
+        transform: scale(1.05);
+        transition: 0.5s;
+        box-shadow: 2px 2px 20px #5C5C5C;
+    }
+
+
+    img {
+        background-image: url(../img/Rectangle\ 21.png);
+        background-size: cover;
+        background-position: center;
+        height: 240px;
+        border-radius: 10px;
+    }
+}
+
+.event-title {
+    font-size: 22px;
+    color: #1F2224;
+    text-align: center;
+    justify-content: center;
+}
+
+h5 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 26px;
+    padding-bottom: 10px;
+}
+
+.datos-section {
+    display: flex;
+    justify-content: center;
+
+    i {
+        padding: 15px;
+        font-size: 30px;
+    }
+}
+
+.dato {
+    width: 25%;
+    text-align: justify;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 50px;
+
+    h6 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    p {
+        justify-content: baseline;
+    }
+
+}
+
+.clientes {
+    background-color: $color4;
+    padding: 100px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+
+    h1 {
+        font-size: 20px;
+        padding: 10px;
+        margin-left: 25px;
+    }
+
+    article {
+        padding-left: 70px;
+        margin: 10px;
+    }
+
+    li {
+        padding: 5px;
+        text-decoration: none;
+    }
+
+}
+
+.footer2{
+display: flex;
+}
+
+.redes {
+    text-align: right;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    font-size: 20px;
+
+    a {
+        font-size: 30px;
+        color: #1F2224;
+        padding: 5px;
+    }
+}
+
+.redes i:hover {
+    color: #862F8B;
+}
+
+.terms {
+    font-size: 15px;
+    color: #1F2224;
+    text-decoration: none;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .barra li {
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .eventos {
+        flex-wrap: wrap;
+        width: 90%;
+        padding: 20px 5px 20px 5px;
+        margin: 10px 5px 10px 5px;
+    }
+
+    .card-evento {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding-right: 5px;
+        padding-left: 5px;
+
+    }
+
+    .statics {
+        flex-wrap: wrap;
+        width: 90%;
+        padding: 20px 5px 20px 5px;
+        margin: 10px 5px 10px 5px;
+    }
+
+    footer {
+        flex-wrap: wrap;
+
+        article{ 
+            padding: 10px;
+        }
+    }
+
+    .redes {
+        text-align: center;
+    }
+
+    .terms {
+        font-size: 10px;
+        text-align: center;
+        padding-bottom: 10px;
+
+    }
+}
+
+
+/*# sourceMappingURL=estilos.css.map */
